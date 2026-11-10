@@ -43,7 +43,7 @@ const moduleLabels: Record<string, string> = {
   performance: "Performance",
   learning: "Learning",
   reports: "Reports",
-  settings: "Settings",
+  settings: "Role settings",
 };
 
 export function getModuleLabel(pathname: string) {
@@ -70,14 +70,14 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
             <span />
             <span />
           </span>
-          <span className="brand-name">kodanda</span>
+          <span className="brand-name">People</span>
           <span className="brand-caption">PEOPLE CLOUD</span>
         </Link>
 
         <div className="workspace-picker">
-          <div className="workspace-avatar">V</div>
+          <div className="workspace-avatar">Y</div>
           <div className="workspace-copy">
-            <strong>Vasavah Group</strong>
+            <strong>Your organization</strong>
             <span>Workspace</span>
           </div>
           <ChevronDown size={16} />
@@ -110,7 +110,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
             href="/settings"
           >
             <Settings2 size={18} strokeWidth={1.8} />
-            <span>Settings</span>
+            <span>Role settings</span>
           </Link>
           <div className="help-card">
             <div className="help-icon">

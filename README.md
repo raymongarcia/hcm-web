@@ -1,6 +1,6 @@
-# Kodanda HCM — Next.js rebuild
+# People Cloud HCM
 
-A standalone Next.js App Router rebuild of the legacy Kodanda HCM frontend. The project uses Next.js 16, React 19, TypeScript, and responsive CSS; the current dashboard and module records use local demo data.
+A standalone human capital management workspace built with the Next.js App Router. The project uses Next.js 16, React 19, TypeScript, and responsive CSS; the dashboard, module records, and role permissions use local demo data.
 
 ## Run locally
 
@@ -15,6 +15,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 - `/` — HCM dashboard
 - `/people` — employee directory
-- `/attendance`, `/time-off`, `/payroll`, `/hiring`, `/performance`, `/learning`, `/reports`, `/settings` — module workspaces
+- `/attendance`, `/time-off`, `/payroll`, `/hiring`, `/performance`, `/learning`, `/reports` — module workspaces
+- `/settings` — configure module access for each workspace role
 
-Module routes currently share an interactive demo directory. Legacy authentication, API integrations, payroll calculations, and persisted records are not yet connected.
+Module routes currently share an interactive demo directory. Role permission changes are held in browser memory and are not persisted; authentication, API integrations, and payroll calculations are not yet connected.

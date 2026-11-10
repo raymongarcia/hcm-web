@@ -3,7 +3,7 @@ import { DashboardShell } from "@/components/dashboard-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kodanda HCM | People, thoughtfully connected",
+  title: "People Cloud | HCM workspace",
   description:
     "A modern human capital management workspace for your people, time, and payroll.",
 };

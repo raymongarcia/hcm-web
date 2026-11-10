@@ -12,6 +12,7 @@ import {
   SlidersHorizontal,
   UsersRound,
 } from "lucide-react";
+import { RoleSettings } from "@/components/role-settings";
 
 type RecordRow = {
   name: string;
@@ -41,7 +42,7 @@ const titles: Record<string, { title: string; description: string; button: strin
   performance: { title: "Performance", description: "Support growth with clear goals and feedback.", button: "Create review", noun: "review" },
   learning: { title: "Learning", description: "Build skills and grow your people together.", button: "Add course", noun: "course" },
   reports: { title: "Reports", description: "Explore insights across your workforce.", button: "Create report", noun: "report" },
-  settings: { title: "Settings", description: "Manage your workspace preferences.", button: "Add setting", noun: "setting" },
+  settings: { title: "Role settings", description: "Control what each role can access across your workspace.", button: "Add role", noun: "role" },
 };
 
 function titleCase(value: string) {
@@ -75,6 +76,10 @@ export function ModuleView({ module }: { module: string }) {
       }),
     [filter, query, rows],
   );
+
+  if (module === "settings") {
+    return <RoleSettings />;
+  }
 
   function addRecord(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();

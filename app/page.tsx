@@ -194,7 +194,7 @@ export default function HomePage() {
           </div>
           <div className="birthday-date"><span className="birthday-day">10</span><span><strong>November</strong><small>TUESDAY</small></span><span className="birthday-today">In 3 days</span></div>
           <div className="birthday-person"><span className="birthday-emoji">🎂</span><div><strong>Priya Sharma</strong><span>Product Designer · Birthday</span></div><button className="send-wish" onClick={() => showNotice("Birthday wishes are ready to send.")}>Send a wish</button></div>
-          <div className="birthday-person"><span className="birthday-emoji">🎉</span><div><strong>Marcus Lee</strong><span>Engineering · 2 years at Kodanda</span></div><button className="send-wish" onClick={() => showNotice("Anniversary wishes are ready to send.")}>Celebrate</button></div>
+          <div className="birthday-person"><span className="birthday-emoji">🎉</span><div><strong>Marcus Lee</strong><span>Engineering · 2 years with the team</span></div><button className="send-wish" onClick={() => showNotice("Anniversary wishes are ready to send.")}>Celebrate</button></div>
         </article>
       </section>
       <div className="dashboard-footer"><span>People are at the heart of everything.</span><button onClick={() => showNotice("Quick actions are coming soon.")}><Plus size={15} /> Quick actions</button></div>
